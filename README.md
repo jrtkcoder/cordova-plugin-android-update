@@ -32,6 +32,20 @@ Just clone and install this demo. [cordova-plugin-app-update-DEMO](https://githu
 
 `cordova plugin add https://github.com/azhengyongqin/cordova-plugin-android-update --save`
 
+### issue
+> 1.`cordova build android，出现：“error: failed linking file resources”，无法编译通过，需要手动在platforms/android/build.gradle文件中引入依赖包`：
+```
+dependencies {
+    implementation fileTree(dir: 'libs', include: '*.jar')
+    // SUB-PROJECT DEPENDENCIES START
+    implementation(project(path: ":CordovaLib"))
+    compile "com.android.support:support-v4:24.1.1+"
+    // SUB-PROJECT DEPENDENCIES END
+    //***********需要引入以下依赖包************：
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+}
+```
+
 # Usage
 
 - Simple:
