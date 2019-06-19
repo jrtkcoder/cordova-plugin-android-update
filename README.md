@@ -33,7 +33,7 @@ Just clone and install this demo. [cordova-plugin-app-update-DEMO](https://githu
 `cordova plugin add https://github.com/azhengyongqin/cordova-plugin-android-update --save`
 
 ### issue
-> 1.`cordova build android，出现：“error: failed linking file resources”，无法编译通过，需要手动在platforms/android/build.gradle文件中引入依赖包`：
+> 1.`cordova build android，出现：“error: failed linking file resources”，无法编译通过，需要手动在platforms/android/app/build.gradle文件中引入依赖包`：
 ```
 dependencies {
     implementation fileTree(dir: 'libs', include: '*.jar')
