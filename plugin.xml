@@ -85,5 +85,6 @@
         <source-file src="res/mipmap-xxhdpi/upgrade_dialog_bg.png" target-dir="res/mipmap-xxhdpi"/>
         
         <framework src="com.android.support:support-v4:24.1.1+" />
+		<framework src="com.android.support.constraint:constraint-layout:1.0.2" />
     </platform>
 </plugin>
